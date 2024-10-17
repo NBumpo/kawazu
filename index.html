@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>KAWAZU</h1>
+    <div id="bentoparent">
+        <div id="clockbento">
+            <p id="userdate">Date
+            </p>
+            <p id="usertime">Time
+            </p>
+           
+            <div class="switch">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="slider round"></label>
+            </div>
+        </div>
+        <div id="gifbento">
+            <input type="text" id="gifSearchInput" placeholder="Search for GIFs">
+            <button onclick="grab_data()" id="gifSearchButton">Search</button>
+            <div id="gifResults"></div>
+            <h2>Top Results</h2>
+            <img id="first_gif" src="" alt="" style="width:25%;height:25%">
+            <img id="second_gif" src="" alt="" style="width:25%;height:25%">
+            <img id="third_gif" src="" alt="" style="width:25%;height:25%">
+            <img id="fourth_gif" src="" alt="" style="width:25%;height:25%">
+            <img id="fifth_gif" src="" alt="" style="width:25%;height:25%">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

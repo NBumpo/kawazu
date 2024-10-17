@@ -1,0 +1,198 @@
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(103, 171, 255);
+    border-radius: 10%;
+  }
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+
+img {
+    border-radius: 25%;
+    max-width: fit-content;
+}
+
+#bentoparent {
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: space-between;
+}
+
+#clockbento{
+    background-color: #ffccd4;
+    border-radius: 15%;
+    margin: 5%;
+    
+   
+    width: 30%;
+    max-width: 30%;
+    height: 30%;
+    max-height: 30%;
+    transition: background-color 1s ease;
+    
+}
+
+#usertime{
+    padding-left: 10%;
+    font-weight: 800;
+    font-size: 400%
+}
+
+#userdate{
+    color: white;
+    font-weight: 800;
+    font-size: 200%
+}
+
+#gifbento{
+    
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #ffccd4;
+    border-radius: 15%;
+    width: 30%;
+    min-width: 300px;
+    height: 30%;
+    min-height: 300px;
+    flex-direction:row;
+    font-size: 275%;
+    margin: 5%;
+    
+    
+    
+    
+}
+
+#gifSearchInput {
+    background-color: white;
+    border: none;
+    margin: 5%;
+    width: 50%;
+    height: 30px;
+    font-size: large;
+    font-weight: 500;
+    padding: 5%;
+    border-radius: 10%;
+}
+
+#gifSearchButton {
+    border: none;
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    margin-top: 10%;
+    font-size: large;
+    border-radius: 10%;
+
+}
+
+#gifSearchButton:hover {
+    background-color: rgb(137, 255, 190);
+    transition: background-color 1s ease;
+}
+
+#gifSearchInput:focus{
+    background-color: rgb(137, 255, 190);
+    transition: background-color 1s ease;
+    border: none;
+    outline: none;
+
+}
+
+h2 {
+    display: inline-block;
+    color: white;
+    font-size:large;
+}
+
+
+
+#clockbento.blue {
+    background-color: #D1E5F4;
+    transition: background-color 1s ease;
+    
+}
+
+#usertime{
+    padding-top: 30%;
+    color: white;
+
+}
+
+body {
+    margin: 0 10% 0 10%;
+    
+}
+body {
+    height: 100%;
+}
+
+/* clock 24/12 hour toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D1E5F4;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #ffccd4;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ffccd4;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
