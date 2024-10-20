@@ -9,12 +9,24 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    margin: 0 10% 0 10%;
+    background-color: #f0e7de;
+    height: 100%;
+    width: 100%;
+    
+}
+
 h1 {
     font-family: "Cherry Bomb One", system-ui;
 }
 
 
 img {
+    width: 100px;
+    height: 100px;
+    max-width: 25%;
+    max-height: 25%;
     border-radius: 25%;
     max-width: fit-content;
 }
@@ -24,62 +36,75 @@ img {
     flex-wrap: wrap;
     display: flex;
     align-content: space-between;
+   
 }
 
 #clockbento{
-    background-color: #ffccd4;
+    display: flex;
+    flex-wrap: wrap;
+   
+    background-color: #a0cbad;
     border-radius: 15%;
-    margin: 5%;
+    margin: 1%;
     
    
     width: 30%;
-    max-width: 30%;
+    min-width: 30%;
     height: 30%;
-    max-height: 30%;
+    min-height: 30%;
     transition: background-color 1s ease;
     
 }
 
 #usertime{
-    padding-left: 10%;
+  
+    width: 100%;
+    padding: 10% 0 10% 10%;
+    color: white;
     font-weight: 800;
-    font-size: 400%
+    font-size: 400%;
+    margin: 0;
 }
 
 #userdate{
+    padding: 0 0 0 10%;
+    width: 100%;
     color: white;
     font-weight: 800;
-    font-size: 200%
+    font-size: 200%;
+    margin: 0;
 }
 
 #gifbento{
     
     flex-wrap: wrap;
     display: flex;
-    background-color: #ffccd4;
+    /*background-color: #ffccd4;*/
+    background-color: #a0cbad;
     border-radius: 15%;
     width: 30%;
-    min-width: 300px;
-    height: 30%;
-    min-height: 300px;
+    min-width: 20%;
+    height: 20%;
+    min-height: 30%;
     flex-direction:row;
     font-size: 275%;
-    margin: 5%;
+    margin: 1%;
     
-    
-    
-    
+}
+
+#gifcontainter {
+    padding-left: 10%;
 }
 
 #gifSearchInput {
     background-color: white;
     border: none;
-    margin: 5%;
+    margin: 10%;
     width: 50%;
     height: 30px;
     font-size: large;
     font-weight: 500;
-    padding: 5%;
+    padding: 3%;
     border-radius: 10%;
 }
 
@@ -95,22 +120,28 @@ img {
 }
 
 #gifSearchButton:hover {
-    background-color: rgb(137, 255, 190);
+    background-color: #ffccd4;
     transition: background-color 1s ease;
 }
 
 #gifSearchInput:focus{
-    background-color: rgb(137, 255, 190);
+    background-color: #ffccd4;
     transition: background-color 1s ease;
     border: none;
     outline: none;
 
 }
 
+#gifSearchInput:is(:-webkit-autofill, :autofill) {
+    background-color: white !important;
+}
+
 h2 {
-    display: inline-block;
+    margin-top: 0%;
+    width: 100%;
     color: white;
-    font-size:large;
+    font-size: 100%;
+    padding-left: 10%;
 }
 
 
@@ -121,19 +152,10 @@ h2 {
     
 }
 
-#usertime{
-    padding-top: 30%;
-    color: white;
 
-}
 
-body {
-    margin: 0 10% 0 10%;
-    
-}
-body {
-    height: 100%;
-}
+
+
 
 /* clock 24/12 hour toggle */
 

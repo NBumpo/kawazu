@@ -20,6 +20,8 @@
             </p>
             <p id="usertime">Time
             </p>
+            <p id="dayName">Time
+            </p>
            
             <div class="switch">
                 <input type="checkbox" id="toggle" />
@@ -27,15 +29,17 @@
             </div>
         </div>
         <div id="gifbento">
-            <input type="text" id="gifSearchInput" placeholder="Search for GIFs">
+            <input type="text" id="gifSearchInput" autocomplete="off" placeholder="Search for GIFs">
             <button onclick="grab_data()" id="gifSearchButton">Search</button>
             <div id="gifResults"></div>
             <h2>Top Results</h2>
-            <img id="first_gif" src="" alt="" style="width:25%;height:25%">
+            <div id="gifcontainter">
+            <img id="first_gif" src="" alt="" style="width:100px;height:100px">
             <img id="second_gif" src="" alt="" style="width:25%;height:25%">
             <img id="third_gif" src="" alt="" style="width:25%;height:25%">
             <img id="fourth_gif" src="" alt="" style="width:25%;height:25%">
             <img id="fifth_gif" src="" alt="" style="width:25%;height:25%">
+        </div>
         </div>
     </div>
     <script src="script.js"></script>

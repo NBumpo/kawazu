@@ -1,11 +1,16 @@
 function clock() {
     const clockElement = document.getElementById('usertime');
     const dateElement = document.getElementById('userdate')
+    const weekdayElement = document.getElementById('dayName')
     const now = new Date();
+    const dayOfWeek = now.getDay();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const dayName = days[dayOfWeek];
     const userTime = now.toLocaleTimeString();
     const userDate = now.toLocaleDateString();
     clockElement.textContent = `${userTime}`;
     dateElement.textContent = `${userDate}`;
+    weekdayElement.textContent = `${dayName}`
 }
 
 clock();
@@ -57,8 +62,8 @@ function tenorCallback_search(responsetext) {
     document.getElementById("first_gif").src = top_10_gifs[0]["media_formats"]["nanogif"]["url"];
     document.getElementById("second_gif").src = top_10_gifs[1]["media_formats"]["nanogif"]["url"];
     document.getElementById("third_gif").src = top_10_gifs[2]["media_formats"]["nanogif"]["url"];
-    document.getElementById("fourth_gif").src = top_10_gifs[3]["media_formats"]["gif"]["url"];
-    document.getElementById("fifth_gif").src = top_10_gifs[4]["media_formats"]["gif"]["url"];
+    document.getElementById("fourth_gif").src = top_10_gifs[3]["media_formats"]["nanogif"]["url"];
+    document.getElementById("fifth_gif").src = top_10_gifs[4]["media_formats"]["nanogif"]["url"];
 
     return;
 
